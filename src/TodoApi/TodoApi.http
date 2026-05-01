@@ -1,0 +1,15 @@
+@TodoApi_HostAddress = http://localhost:5024
+
+GET {{TodoApi_HostAddress}}/api/todos
+Accept: application/json
+
+###
+
+POST {{TodoApi_HostAddress}}/api/todos
+Content-Type: application/json
+
+{
+  "title": "Build first endpoint",
+  "description": "Create a sample todo item",
+  "isCompleted": false
+}
